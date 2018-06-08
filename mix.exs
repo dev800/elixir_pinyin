@@ -4,14 +4,14 @@ defmodule Pinyin.Mixfile do
   def project do
     [
       app: :pinyin_util,
-      version: "0.1.1",
+      version: "0.1.2",
       elixir: "~> 1.2",
       description: description(),
       build_embedded: Mix.env() == :prod,
       start_permanent: Mix.env() == :prod,
       package: package(),
       deps: deps(),
-      docs: [extras: ["README.md"]]
+      docs: [extras: ["README.md", "priv/data/pinyin.dat"]]
     ]
   end
 
@@ -25,7 +25,6 @@ defmodule Pinyin.Mixfile do
   defp deps do
     [
       {:benchfella, "~> 0.3.0", only: :dev},
-      {:earmark, "~> 0.1", only: :dev},
       {:ex_doc, "~> 0.11", only: :dev},
       {:dialyze, "~> 0.2.0", only: :dev},
       {:inch_ex, "~> 0.5", only: :docs},
