@@ -11,7 +11,7 @@ defmodule Pinyin.Mixfile do
       start_permanent: Mix.env() == :prod,
       package: package(),
       deps: deps(),
-      docs: [extras: ["README.md", "priv/data/pinyin.dat"]]
+      docs: [extras: ["README.md"]]
     ]
   end
 
@@ -43,7 +43,7 @@ defmodule Pinyin.Mixfile do
       maintainers: ["dev800"],
       licenses: ["MIT"],
       links: %{"Github" => "https://github.com/dev800/pinyin_util"},
-      files: ~w(mix.exs README.md lib)
+      files: ~w(mix.exs README.md lib priv)
     ]
   end
 end
