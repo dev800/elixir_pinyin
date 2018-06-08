@@ -4,7 +4,7 @@ defmodule Pinyin.Mixfile do
   def project do
     [
       app: :pinyin_util,
-      version: "0.1.0",
+      version: "0.1.1",
       elixir: "~> 1.2",
       description: description(),
       build_embedded: Mix.env() == :prod,
@@ -43,7 +43,7 @@ defmodule Pinyin.Mixfile do
     [
       maintainers: ["dev800"],
       licenses: ["MIT"],
-      links: %{"Github" => "https://github.com/dev800/elixir_pinyin"},
+      links: %{"Github" => "https://github.com/dev800/pinyin_util"},
       files: ~w(mix.exs README.md lib)
     ]
   end
